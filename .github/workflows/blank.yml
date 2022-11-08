@@ -29,5 +29,5 @@ jobs:
           cache: 'pip'
 
       - run: |
-          !pip install nbtopy
+          pip install requirements.txt
           nbtopy archivo_ejemplo_01.ipynb
