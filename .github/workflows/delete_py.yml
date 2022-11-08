@@ -1,12 +1,12 @@
-name: delete_py
+name: Jupyter_a_py
 
 on:
-   workflow_dispatch:
-
-job:
+  
+  workflow_dispatch:
+jobs:
   build:
-    runs-on:ubuntu-latest
-    
+    runs-on: ubuntu-latest
+
     steps:
       - run: rm archivo_ejemplo_01.py
 
