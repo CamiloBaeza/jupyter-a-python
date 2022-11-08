@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: Jupyter_a_py
+name: Jupyter_a_py2
 
 # Controls when the workflow will run
 on:
