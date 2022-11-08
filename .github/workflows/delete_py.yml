@@ -1,1 +1,14 @@
+name: delete_py
 
+on:
+   workflow_dispatch:
+
+job:
+  build:
+    runs-on:ubuntu-latest
+    
+    steps:
+      - name: Remove File
+          uses: JesseTG/rm@v1.0.3
+          with:
+          path: ./archivo_ejemplo_01.py
