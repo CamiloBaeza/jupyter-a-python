@@ -7,7 +7,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
- # Add new files in folder, commit along with other modified files, push
+
       - id: commit
         name: Commit files
         run:
