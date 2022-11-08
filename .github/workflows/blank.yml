@@ -36,7 +36,7 @@ jobs:
         name: Jupyter Notebook Execution
         run: jupyter execute cambiar_extencion.ipynb
         shell: bash 
-        
+
  # Add new files in folder, commit along with other modified files, push
       - id: commit
         name: Commit files
