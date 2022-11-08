@@ -8,11 +8,7 @@ job:
     runs-on:ubuntu-latest
     
     steps:
-      - id: remove
-          name: Remove File
-          uses: JesseTG/rm@v1.0.3
-          with:
-          path: ./archivo_ejemplo_01.py
+      - run: rm archivo_ejemplo_01.py
 
  # Add new files in folder, commit along with other modified files, push
       - id: commit
