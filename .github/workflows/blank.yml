@@ -27,9 +27,6 @@ jobs:
         with:
           python-version: '3.9'
           cache: 'pip'
-      - run: pip install -r -U requirements.txt
-
-      - id: jupyter 
-        name: Jupyter Notebook Execution
-        run: jupyter execute cambiar_extencion.ipynb
-        shell: bash 
+      - run: |
+              sudo pip install  -U nbtopy
+              sudo nbtopy archivo_ejemplo_01.ipynb
