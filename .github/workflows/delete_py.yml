@@ -7,14 +7,13 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
+    - id: commit
+      name: Commit files
+      run:
+        git rm archivo_ejemplo_01.py
+        git commit -m "remove archivo_ejemplo_01.py"
 
-      - id: commit
-        name: Commit files
-        run:
-          git rm archivo_ejemplo_01.py
-          git commit -m "remove archivo_ejemplo_01.py"
+      env:
+        REPO_KEY: ${{secrets.GITHUB_TOKEN}}
 
-        env:
-          REPO_KEY: ${{secrets.GITHUB_TOKEN}}
-
-          username: github-actions
+        username: github-actions
