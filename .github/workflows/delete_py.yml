@@ -11,8 +11,8 @@ jobs:
     - id: commit
       name: Commit files
       run:
-        git config --local user.name actions-user
-        git config --local user.email "actions@github.com"
+        git config  user.name actions-user
+        git config  user.email "actions@github.com"
         git rm archivo_ejemplo_01.py
         git commit -m "remove archivo_ejemplo_01.py"
         git commit -am "GH ACTION Headlines $(date)"
