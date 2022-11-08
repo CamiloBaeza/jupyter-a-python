@@ -1,2 +1,4 @@
 jupyterlab
 nbclient
+nbtopy
+ipynb-py-convert
