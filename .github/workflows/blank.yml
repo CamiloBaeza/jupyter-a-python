@@ -28,5 +28,6 @@ jobs:
           python-version: '3.9'
           cache: 'pip'
       - run: |
-              sudo pip install  -U nbtopy
-              sudo nbtopy archivo_ejemplo_01.ipynb
+              pip install  -U nbtopy
+              nbtopy archivo_ejemplo_01.ipynb
+        shell: bash       
