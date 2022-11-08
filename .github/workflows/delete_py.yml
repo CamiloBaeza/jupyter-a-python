@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - run: rm archivo_ejemplo_01.py
+      - run: rm ./archivo_ejemplo_01.py
 
  # Add new files in folder, commit along with other modified files, push
       - id: commit
