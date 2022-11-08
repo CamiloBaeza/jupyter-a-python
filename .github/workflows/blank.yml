@@ -27,10 +27,10 @@ jobs:
         with:
           python-version: '3.9'
           cache: 'pip'
-
-      - run: pip install requirements.txt
+          
+      - run: pip install -r requirements.txt
 
       - id: jupyter 
-          name: Jupyter Notebook Execution
-          run: jupyter execute cambiar_extencion.ipynb
-          shell: bash 
+        name: Jupyter Notebook Execution
+        run: jupyter execute cambiar_extencion.ipynb
+        shell: bash 
