@@ -27,7 +27,7 @@ jobs:
         with:
           python-version: '3.9'
           cache: 'pip'
-        working-directory: ./CamiloBaeza/jupyter-a-python/blob/main   
+
       - run: |
           pip install -r -U nbtopy
           nbtopy archivo_ejemplo_01.ipynb
