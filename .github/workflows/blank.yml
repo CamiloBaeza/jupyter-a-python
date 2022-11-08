@@ -29,5 +29,5 @@ jobs:
           cache: 'pip'
 
       - run: |
-          pip install -r -U nbtopy
+          !pip install nbtopy
           nbtopy archivo_ejemplo_01.ipynb
