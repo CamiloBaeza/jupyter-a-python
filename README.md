@@ -1,5 +1,2 @@
-# Action_jupyter_to_py
+# Cambiar extencion .ipynb a .py
 
-whit Github actions
-
-this repo demos the action by dowloading a csvs
