@@ -28,6 +28,9 @@ jobs:
           python-version: '3.9'
           cache: 'pip'
       - run: |
-              pip install  -U nbtopy
-              nbtopy archivo_ejemplo_01.ipynb
+            - run: pip install -r -U nbtopy
+
+      - id: jupyter 
+        name: Jupyter Notebook Execution
+        run: jupyter execute download.py
         shell: bash       
