@@ -6,6 +6,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    steps: 
+        - run: | 
+                find archivo_ejemplo_01.py
 
     - id: commit
       name: Commit files
