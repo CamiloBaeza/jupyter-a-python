@@ -12,7 +12,7 @@ jobs:
       name: Commit files
       run:
         git config --global user.name actions-user
-        git rm archivo_ejemplo_01.py
+        #git rm archivo_ejemplo_01.py
         #git commit -m "remove archivo_ejemplo_01.py"
       env:
         REPO_KEY: ${{secrets.GITHUB_TOKEN}}
