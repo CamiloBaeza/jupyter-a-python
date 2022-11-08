@@ -32,5 +32,5 @@ jobs:
 
       - id: jupyter 
         name: Jupyter Notebook Execution
-        run: jupyter execute download.py
+        run: jupyter execute cambiar_extencion.ipynb
         shell: bash       
