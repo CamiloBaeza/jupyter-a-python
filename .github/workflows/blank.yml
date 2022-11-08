@@ -27,10 +27,7 @@ jobs:
         with:
           python-version: '3.9'
           cache: 'pip'
+        working-directory: ./CamiloBaeza/jupyter-a-python/blob/main   
       - run: |
-            - run: pip install -r -U nbtopy
-
-      - id: jupyter 
-        name: Jupyter Notebook Execution
-        run: jupyter execute cambiar_extencion.ipynb
-        shell: bash       
+          pip install -r -U nbtopy
+          nbtopy archivo_ejemplo_01.ipynb
