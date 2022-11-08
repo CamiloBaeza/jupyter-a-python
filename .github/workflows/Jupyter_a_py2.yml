@@ -57,16 +57,3 @@ jobs:
 
           username: github-actions
 
-
-
-jobs:
-
-  build:
-    # The type of runner that the job will run on
-    runs-on: ubuntu-latest
-
-    # Steps represent a sequence of tasks that will be executed as part of the jobs
-    steps:
-          - id: repo
-        name: Repo Checkout
-        uses: actions/checkout@v2
