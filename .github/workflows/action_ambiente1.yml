@@ -1,0 +1,27 @@
+name: action ambiente 1
+
+on:
+  workflow_dispatch:
+
+jobs:
+
+  build:
+  
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - id: repo
+        name: Repo Checkout
+        uses: actions/checkout@v2
+
+      - run: | 
+              touch txt
+              echo aws_host="${{VARS.BUCKET}}" >> .txt
+              echo "cat .txt"
+              echo "ls -a ."
+              ls -a .
+              
+              echo "ls -a ${{ github.workspace }}"
+              ls -a ${{ github.workspace }}
+      - shell: bash
