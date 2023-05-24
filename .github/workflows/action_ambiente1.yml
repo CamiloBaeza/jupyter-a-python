@@ -14,9 +14,10 @@ jobs:
       - id: repo
         name: Repo Checkout
         uses: actions/checkout@v2
-        
+
       - id: goridto xD   
-      - name: Repo Checkout
+        name: Repo Checkout
+        uses: actions/setup-python@v2
         run: | 
               touch txt
               echo aws_host="${{VARS.BUCKET}}" >> .txt
