@@ -15,7 +15,7 @@ jobs:
         name: Repo Checkout
         uses: actions/checkout@v2
 
-      - run: | 
+        run: | 
               touch txt
               echo aws_host="${{VARS.BUCKET}}" >> .txt
               echo "cat .txt"
@@ -24,4 +24,4 @@ jobs:
               
               echo "ls -a ${{ github.workspace }}"
               ls -a ${{ github.workspace }}
-      - shell: bash
+        shell: bash
